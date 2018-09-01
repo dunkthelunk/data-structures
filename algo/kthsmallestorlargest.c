@@ -16,6 +16,7 @@ void swap(int *seq, int index1, int index2) {
   seq[index2] = temp;
 }
 
+// equivalent to partition method of QuickSort
 int reassemblePivotSides(int *seq, bool (* const ordering)(int, int), int seqbegin, int seqend) {
   int pivotIndex = seqbegin;
   int pivotVal = seq[seqend - 1];
